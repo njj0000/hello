@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+
+
+<html>
+
+
+
+<head>
+<meta charset="UTF-8">
+<title>성적표</title>
+<script type="text/javascript">
+var name, master, nuber, cj, py, kh, yh, sh, ch;
+var kk,yy,ss,cc
+name = prompt("이름을 넣어주세요"," ");
+master = prompt("전공은 무엇입니까"," ");
+nuber = prompt("학번은 몇번입니까"," ");
+kk = prompt("국어점수는 몇점","");
+yy = prompt("영어점수는 몇점","");
+ss = prompt("수학점수는 몇점","");
+cc = prompt("컴퓨터점수는 몇점","");
+
+cj = Number(kk)+Number(yy)+Number(ss)+Number(cc)
+py = cj/3
+
+if(kk>=90)
+ kh="A"
+else if(kk>=80)
+ kh="B"
+else if(kk>=70)
+ kh="C"
+else if(kk>=60)
+ kh="D"
+else
+ kh="F"
+
+if(yy>=90)
+ yh="A"
+else if(yy>=80)
+ yh="B"
+else if(yy>=70)
+ yh="C"
+else if(yy>=60)
+ yh="D"
+else
+ yh="F"
+
+if(ss>=90)
+ sh="A"
+else if(ss>=80)
+ sh="B"
+else if(ss>=70)
+ sh="C"
+else if(ss>=60)
+ sh="D"
+else
+ sh="F"
+
+if(cc>=90)
+ ch="A"
+else if(cc>=80)
+ ch="B"
+else if(cc>=70)
+ ch="C"
+else if(cc>=60)
+ ch="D"
+else
+ ch="F"
+
+document.write("<div style='line-height: 1.5em; font-size: 45px'>이름 : "+name,", 전공 : "+master,", 학번 : "+nuber);
+document.write("<br>교과목 : 국어 영어 수학 컴퓨터 언어");
+document.write("<br>점수 : "+kk,", "+yy,", "+ss,", "+cc);
+document.write("<br>학점 : "+kh,", "+yh,", "+sh,", "+ch);
+document.write("<br>총점 : "+cj,", 평균 : "+ py.toFixed(1) + "</div>");
+
+</script>
+</head>
+<body topmargin='10'  leftmargin='10' marginwidth='10' marginheight='10'>
+</body>
+</html>

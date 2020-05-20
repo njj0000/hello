@@ -1,0 +1,34 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+<title>합격,불합격</title>
+
+</head>
+<body>
+
+<script>
+
+var score1= prompt("국어 과목의 점수 입력")*1; 
+var score2= prompt("수학 과목의 점수 입력")*1;
+var score3= prompt("영어 과목의 점수 입력")*1;
+var score4= prompt("컴퓨터 과목의 점수 입력")*1;
+var score5 = score1 + score2 + score3 + score4;
+
+
+if(score1 >= 95 || score2 >= 95 || score3 >=95|| score3 >= 95 ||score4 >= 95 ||score5 >= 360)
+{
+
+document.write('합격입니다.');
+document.write('<br> Score1 :' + score1 + '<br> Score2 :' + score2 + '<br> Score3 :' + score3 + '<br> Score4 :' + score4);
+
+}
+else
+{
+document.write('불합격입니다.');
+document.write('<br> Score1 :' + score1 + '<br> Score2 :' + score2+ '<br> Score3 :' + score3+ '<br> Score4 :' + score4);
+}
+</script>
+
+
+</body>
+</html>
