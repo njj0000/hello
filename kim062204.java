@@ -9,7 +9,7 @@ class Car {
 	}
 	public void clack()
 	{
-		System.out.println(name+"»§»§");
+		System.out.println(name+"¶¥¶¥");
 	}
 	public String getName()
 	{
